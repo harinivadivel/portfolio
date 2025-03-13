@@ -13,19 +13,19 @@
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-.contactPageSubtitle{
+/* .contactPageSubtitle{
     font-weight: 300;
     font-size: 1rem;
-}
-.contactPageLink{
+} */
+/* .contactPageLink{
     margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
-#connect{
+/* #connect{
     padding: 2rem;
-}
+} */
 .contactDesc{
     padding: 1rem;
     font-size: medium;

@@ -1,0 +1,20 @@
+.connectPageTitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.connectPageSubtitle{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.connectPageLink{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#connectPage{
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

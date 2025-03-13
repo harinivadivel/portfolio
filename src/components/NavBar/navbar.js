@@ -54,11 +54,11 @@ const Navbar = () => {
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Home</Link>
                 <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
                 <Link activeClass="active" to="resume" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Resume</Link>
-                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Connect</Link>
+                <Link activeClass="active" to="connectPage" spy={true} smooth={true} offset={-10} duration={500} className="desktopMenuListItem">Connect</Link>
             </div>
 
             {/* Contact Button */}
-            <button className="desktopMenuButton" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>
+            <button className="desktopMenuButton" offset={-60} duration={500} onClick={() => document.getElementById("contactPage").scrollIntoView({ behavior: "smooth" })}>
                 Contact Me
             </button>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
                     <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
                     <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>About</Link>
                     <Link activeClass="active" to="resume" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Resume</Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Connect</Link>
+                    <Link activeClass="active" to="connectPage" spy={true} smooth={true} offset={-10} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Connect</Link>
                 </div>
             )}
         </nav>
