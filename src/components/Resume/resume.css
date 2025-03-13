@@ -1,0 +1,31 @@
+
+h1{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+h3{
+    margin-bottom: 0.5rem;
+}
+.downloadbtn{
+    background: rgb(38 76 116);
+    color: white;
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 8rem;
+    padding: 0 auto;
+    margin: auto;
+}
+.resumeImg{
+    height: 75rem;
+    width: 50rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen  and (max-width: 720px) {
+    .resumeImg{
+        height: 25rem;
+        width: 20rem;
+    }
+
+}

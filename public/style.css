@@ -1,0 +1,16 @@
+/* Basic styles for the portfolio */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family:'Poppins',sans-serif;
+    font-weight: 400;
+}
+body {
+    background: rgb(48, 87, 116);
+    color: #ffffff;
+    overflow: hidden;
+    overflow-y: scroll;
+}

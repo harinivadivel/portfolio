@@ -1,0 +1,64 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow:hidden;
+
+}
+.bg{
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 80vh;
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color: aqua;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.btn{
+    background: white;
+    margin: 1rem ;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.30rem;
+    height: 2.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+@media screen and (max-width:480px) {
+    .bg{
+        right: -10vw
+    }
+}
