@@ -1,12 +1,26 @@
-
+#resume{
+    overflow: hidden;
+    width: 100vh;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
 h1{
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 5rem;
     margin-bottom: 0.5rem;
-    padding-top: 5%;
+    padding-top: 15%;
+    padding-right: 50%;
 }
-h3{
+p{
     margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+
 }
 .downloadbtn{
     background: rgb(38 76 116);
@@ -26,8 +40,27 @@ h3{
 
 @media screen  and (max-width: 720px) {
     .resumeImg{
-        height: 25rem;
-        width: 20rem;
+        height: 55rem;
+        width: 50rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding-left: 55%;
+    }
+    p{
+        font-size:0.5rem;
+
+    }
+    .downloadbtn{
+        height: 2rem;
+        width: 3rem;
     }
 
+}
+@media screen  and (max-width: 480px) {
+    .resumeImg{
+        min-height: 10rem;
+        min-width: 6rem;
+    }
+    
 }

@@ -59,3 +59,16 @@
     margin: 2rem;
     padding: 0.75rem 3.5rem;
 }
+@media screen  and (max-width:480px){
+    .contactForm{
+        width: 5rem;
+        height: 2rem;
+    }
+    .contactPageTitle{
+        font-size: 1.5rem;
+    }
+    .contactDesc{
+        font-size: 0.8rem;
+    }
+    
+}

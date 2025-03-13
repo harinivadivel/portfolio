@@ -17,10 +17,10 @@ const resume = () => {
         <>
             <center id="resume">
                 <h1>My Resume</h1>
-                <h3>
+                <p>
                     Click on below button to download PDF
                     file
-                </h3>
+                </p>
                 <div>
                 <img src={Resume} alt="Resume"  className="resumeImg"/>
                 </div>
