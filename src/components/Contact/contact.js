@@ -4,7 +4,7 @@ import './contact.css'
 // import GitHub from '../../assets/github.png';
 // import Instagram from '../../assets/instagram.png';
 // import Facebook from '../../assets/facebook.png';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import { useEffect } from 'react';
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,34 +15,57 @@ const Contact = () => {
   useEffect(() => {
     document.getElementById("contactPage")?.scrollIntoView({ behavior:"smooth"});
 
-  },[]);
-  const form = useRef()
-  const sendEmail = (e) => {
-    e.preventDefault();
+  },[]);const form = useRef();
 
-    emailjs
-      .sendForm('service_2sft42b', 'template_f9oyumm', form.current, {
-        publicKey: 'pIvB1HZMMrrbmFykucmVO',
+  const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm(
+          "service_2sft42b",
+          "template_f9oyumm",
+          form.current,
+          "lNaP8P8VnuWeBCYlV"
+      )
+      .then((response) => {
+          console.log("Email sent successfully!", response);
+          alert("Message sent successfully!");
       })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+      .catch((error) => {
+          console.error("Error sending email:", error);
+          alert("Failed to send message.");
+      });
+
+      e.target.reset(); // Reset form fields
   };
+
+
+  // const form = useRef()
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm('service_2sft42b', 'template_f9oyumm', form.current, {
+  //       publicKey: 'pIvB1HZMMrrbmFykucmVO',
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log('SUCCESS!');
+  //       },
+  //       (error) => {
+  //         console.log('FAILED...', error.text);
+  //       },
+  //     );
+
   return (
     <section id="contactPage">
         <div className="contact-container">
              <h1 className="contactPageTitle">Contact Me</h1>
              <span className="contactDesc">Please fill out the form below to discuss any work opportunities or collaborations</span>
-             <form className="contactForm"ref={form} onSubmit={sendEmail}> 
+             <form className="contactForm" ref={form} onSubmit={sendEmail}> 
                 <input type="text"className="name" placeholder="Name" name='your_name'/>
                 <input type="email"className="email" placeholder="Email" name='your_email'/>
                 <textarea className="msg" name="message" row="10"placeholder="Message"></textarea>
-                <button type="submit" value="Send" className="submitButton">Submit</button>
+                <button  type="submit" value="Submit" className="sendbtn">Submit</button>
              </form>
         </div>
         {/* <div id="connect">

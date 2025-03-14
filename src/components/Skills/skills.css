@@ -56,18 +56,18 @@
 }
 
 @media screen and (max-width: 480px) {
-    .skills{
+    .skillsBar{
         height: 55rem;
-        width: 50rem;
+        width: 10rem;
     }
     .skillBarText>p{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .skillBarImg{
         height: 2.25rem;
         width: 2.25rem;
     }
     .skillBarText>h2{
-        font-size: 5vw;
+        font-size: 3vw;
     }
 }
