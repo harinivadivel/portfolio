@@ -73,3 +73,17 @@ p{
     }
     
 }
+@media(min-width: 481px) and (max-width: 768px){
+    .resumeImg{
+        width: 80%;
+        height: auto;
+    }
+    .downloadbtn{
+        width: 100px;
+        height: 40px;
+    }
+    h1,p{
+        text-align: center;
+        padding: 5px;
+    }
+}

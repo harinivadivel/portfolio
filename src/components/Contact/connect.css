@@ -71,6 +71,38 @@
         text-align: center;
     }
 }
+@media(min-width: 481px) and (max-width: 768px){
+    .contactForm {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: auto;
+    }
+
+    .sendbtn {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .connectPageTitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .connectPageSubtitle {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 10px; /* Prevents text from stretching edge-to-edge */
+    }
+
+    .connectPageLink {
+        margin: auto;
+        padding-inline: 15%;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
 /* @media screen  and (max-width:480px){
     .connectPageTitle{
         font-size: 1.5rem;
