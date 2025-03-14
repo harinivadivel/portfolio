@@ -1,7 +1,7 @@
 #resume{
     overflow: hidden;
-    width: 100vh;
-    max-width: 65rem;
+    width: 90%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,9 @@ p{
 }
 .resumeImg{
     height: 35rem;
-    width: 30rem;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
     margin-bottom: 0.5rem;
 }
 
@@ -58,8 +60,16 @@ p{
 }
 @media screen  and (max-width: 480px) {
     .resumeImg{
-        min-height: 10rem;
-        min-width: 6rem;
+        width: 80%;
+        height: auto;
+    }
+    .downloadbtn{
+        width: 100px;
+        height: 40px;
+    }
+    h1,p{
+        text-align: center;
+        padding: 5px;
     }
     
 }

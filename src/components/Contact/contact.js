@@ -35,14 +35,14 @@ const Contact = () => {
   };
   return (
     <section id="contactPage">
-        <div id="contact">
+        <div className="contact-container">
              <h1 className="contactPageTitle">Contact Me</h1>
              <span className="contactDesc">Please fill out the form below to discuss any work opportunities or collaborations</span>
              <form className="contactForm"ref={form} onSubmit={sendEmail}> 
                 <input type="text"className="name" placeholder="Name" name='your_name'/>
                 <input type="email"className="email" placeholder="Email" name='your_email'/>
                 <textarea className="msg" name="message" row="10"placeholder="Message"></textarea>
-                <button type="submit" value="Send" className="sendbtn">Submit</button>
+                <button type="submit" value="Send" className="submitButton">Submit</button>
              </form>
         </div>
         {/* <div id="connect">

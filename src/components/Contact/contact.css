@@ -1,4 +1,4 @@
-#contactPage{
+/* #contactPage{
     min-height:calc(100vh);
     width: 100vw;
     max-width: 60rem;
@@ -12,7 +12,7 @@
 .contactPageTitle{
     font-size: 3rem;
     margin-bottom: 1rem;
-}
+} */
 /* .contactPageSubtitle{
     font-weight: 300;
     font-size: 1rem;
@@ -26,7 +26,7 @@
 /* #connect{
     padding: 2rem;
 } */
-.contactDesc{
+/* .contactDesc{
     padding: 1rem;
     font-size: medium;
     font-weight: 300;
@@ -58,8 +58,160 @@
     border-radius: 0.5rem;
     margin: 2rem;
     padding: 0.75rem 3.5rem;
+} */
+/* Main Contact Page Styling */
+#contactPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
 }
-@media screen  and (max-width:480px){
+
+/* Contact Form Container */
+.contact-container {
+    width: 100%;
+    max-width: 400px; /* Keeps the form at a readable width */
+    padding: 20px;
+    background-color: #0a192f; /* Adjust background to match theme */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Inputs */
+.contact-container input,
+.contact-container textarea {
+    width: 100%; /* Makes inputs full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgb(48 87 116);
+    font-size: 1rem;
+}
+
+/* Submit Button */
+.sendbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #64ffda; /* Highlight color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sendbtn:hover {
+    background-color: #52e0c4;
+}
+
+/* Contact Links Section */
+.contactPageLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link {
+    margin: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 480px) {
+    .contact-container {
+        width: 90%; /* Reduce width for small devices */
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .contactPageTitle {
+        font-size: 1.5rem; /* Reduce title size */
+        text-align: center;
+    }
+    .connectDesc{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    input,textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .sendbtn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem; /* Adjust button text */
+    }
+
+}
+/* For devices with max width of 720px */
+@media screen and (max-width: 720px) {
+    .connectPage {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .connectPageTitle {
+        font-size: 1.8rem;
+    }
+
+    .connectDesc {
+        font-size: 1rem;
+    }
+
+    .connectPageLink {
+        margin: 20px auto;
+        padding: 10px;
+        display: block;
+    }
+
+    .contactForm {
+        width: 80%;
+        height: auto;
+    }
+
+    .sendbtn {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+/* For devices with max width of 480px */
+/* @media screen and (max-width: 480px) {
+    .connectPage {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .connectPageTitle {
+        font-size: 1.5rem;
+    }
+
+    .connectDesc {
+        font-size: 0.9rem;
+    }
+
+    .connectPageLink {
+        width: 100%;
+        margin: 15px auto;
+        padding: 8px;
+    }
+
+    .contactForm {
+        width: 100%;
+        height: auto;
+    }
+
+    .sendbtn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+} */
+/* @media screen  and (max-width:480px){
     .contactForm{
         width: 5rem;
         height: 2rem;
@@ -71,4 +223,4 @@
         font-size: 0.8rem;
     }
     
-}
+} */
