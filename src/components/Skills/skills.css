@@ -57,17 +57,17 @@
 
 @media screen and (max-width: 480px) {
     .skillsBar{
-        height: 55rem;
-        width: 10rem;
+        height: 50px;
+        width: 100px;
     }
     .skillBarText>p{
-        font-size: 2vw;
+        font-size: 1vw;
     }
     .skillBarImg{
         height: 2.25rem;
         width: 2.25rem;
     }
     .skillBarText>h2{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
