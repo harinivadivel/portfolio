@@ -46,12 +46,20 @@
     
 }
 @media screen and (max-width: 720px) {
+    .skills{
+        height: 55rem;
+        width: 50rem;
+    }
     .skillBarText>p{
         font-size: 2vw;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .skills{
+        height: 55rem;
+        width: 50rem;
+    }
     .skillBarText>p{
         font-size: 3vw;
     }

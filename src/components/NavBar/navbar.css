@@ -229,3 +229,61 @@
     }
     
 }
+@media (min-width: 481px) and (max-width: 768px)   
+    /* Styles for devices between 481px and 768px */  
+ {
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .desktopMenu {
+        display: none;
+        background: transparent; /* Make it invisible */
+    }
+
+    .menuButton {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 100;
+
+    }
+
+    .listItem {
+        color: white;
+        padding: 0.5rem 3rem;
+        margin: 0.25rem;
+        text-decoration: none;
+        font-size: 18px;
+        background: rgb(48 87 116);
+        height: 2rem;
+        cursor: pointer;
+        gap: 1rem;
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .listItem:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+}
