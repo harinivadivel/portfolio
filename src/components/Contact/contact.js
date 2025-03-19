@@ -85,7 +85,7 @@ const Contact = () => {
                 <input type="email"className="email" placeholder="Email" name='your_email'/>
                 <textarea className="msg" name="message" row="10"placeholder="Message"></textarea>
                 <ReCAPTCHA
-           sitekey="6LeMGfkqAAAAACI1nR7akb1jEVVu_h3-VgEGhm8S" onChange={(value) => setCaptchaValue(value)} />
+           sitekey="6LeJHPkqAAAAAB88h_VRGaxix9rQjDPXJVsgpGJc" onChange={(value) => setCaptchaValue(value)} />
                 <button  type="submit" value="Submit" className="sendbtn">Submit</button>
              </form>
         </div>
