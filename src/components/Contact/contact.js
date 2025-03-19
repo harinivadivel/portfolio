@@ -6,19 +6,38 @@ import './contact.css'
 // import Facebook from '../../assets/facebook.png';
 import emailjs from 'emailjs-com';
 import { useEffect } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import GitHubIcon from '@mui/icons-material/GitHub';
 // import FacebookIcon from '@mui/icons-material/Facebook';
 // import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contact = () => {
+  // const [captchaValue, setCaptchaValue] = React.useState(null);
+  
+  // const handleSumbit = (e) => {
+  //   e.preventDefault();
+  //   if (!captchaValue) {
+  //     alert("Please verify you are not a robot!");
+  //     return;
+  //   }
+  //   alert("Form submitted successfully!");
+  // };
   useEffect(() => {
     document.getElementById("contactPage")?.scrollIntoView({ behavior:"smooth"});
 
-  },[]);const form = useRef();
+  },[]);
+  const [captchaValue,setCaptchaValue]=React.useState(null);
+  const form = useRef();
 
   const sendEmail = (e) => {
       e.preventDefault();
+
+      if (!captchaValue) {
+            alert("Please verify you are not a robot!");
+            return;
+          }
+          alert("Form submitted successfully!");
 
       emailjs.sendForm(
           "service_2sft42b",
@@ -65,6 +84,8 @@ const Contact = () => {
                 <input type="text"className="name" placeholder="Name" name='your_name'/>
                 <input type="email"className="email" placeholder="Email" name='your_email'/>
                 <textarea className="msg" name="message" row="10"placeholder="Message"></textarea>
+                <ReCAPTCHA
+           sitekey="6LdcF_kqAAAAAFXbDup9OSEPDPxDd-8VDWIMaIuv" onChange={(value) => setCaptchaValue(value)} />
                 <button  type="submit" value="Submit" className="sendbtn">Submit</button>
              </form>
         </div>
